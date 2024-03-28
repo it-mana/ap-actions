@@ -1,0 +1,23 @@
+version: "1.0"
+
+action:
+  #Must Have Properties
+  name: "Maya Launcher"
+
+  #Optional Properties
+  version: 1
+  id: "mana::maya::launcher"
+  category: "mana/dcc/maya"
+  enable: false
+  type: python
+  author: "mana"
+  icon:
+    path: "resource/maya_icon.svg"
+
+  script: "code/run_launcher.py"
+  settings: code/launcher_settings.py
+
+  #Where to register this action
+  register:
+    file:
+      filter: "*.ma;*.mb"

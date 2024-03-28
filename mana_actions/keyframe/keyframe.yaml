@@ -1,0 +1,32 @@
+# Anchorpoint Markup Language
+# Predefined Variables: e.g. ${path}
+# Environment Variables: e.g. ${MY_VARIABLE}
+# Full documentation: https://docs.anchorpoint.app/docs/actions/create-actions
+
+version: 1.0
+action:
+  name: Keyframe / Compare Versions
+
+  version: 1
+  id: ap::mana::keyframe
+  category: utility/keyframe
+  type: python
+  enable: false
+  author: Mana
+  description: Compare Versions with Keyframe
+  icon:
+    path: :/icons/music-audio/play-button.svg
+
+  script: keyframe.py
+  settings: keyframe_settings.py
+
+  register:
+    file:
+      enable: true
+      filter: "*.mov;*.avi;*.wmv;*.mp4;*.mkv"
+  
+  toast:
+    success:
+      message: "Successfully Started."
+    error:
+      message: "Something went wrong."

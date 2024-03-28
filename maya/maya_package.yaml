@@ -1,0 +1,21 @@
+version: "1.0"
+
+action:
+  #Must Have Properties
+  name: "Maya Integration"
+
+  #Optional Properties
+  version: 1
+  id: "mana::package::maya"
+  category: "mana/dcc/maya"
+  type: package
+  enable: false
+  description: Maya Integration for Anchorpoint.
+  details: ''
+
+  author: "mana"
+  icon:
+    path: "resource/maya_icon.svg"
+
+  actions:
+    - mana::maya::launcher

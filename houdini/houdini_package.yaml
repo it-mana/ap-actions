@@ -1,0 +1,23 @@
+version: "1.0"
+
+action:
+  #Must Have Properties
+  name: "Houdini Integration"
+
+  #Optional Properties
+  version: 1
+  id: "mana::package::houdini"
+  category: "mana/dcc/houdini"
+  type: package
+  enable: false
+  description: Houdini Integration for Anchorpoint.
+  details: ''
+
+  author: "mana"
+  icon:
+    path: "resource/houdini_icon.svg"
+
+  # settings: code/workspace.py
+
+  actions:
+    - mana::houdini::launcher
